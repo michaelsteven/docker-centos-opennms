@@ -10,25 +10,7 @@ ENV JAVA_HOME /usr/bin/java
 
 
 RUN rpm -Uvh https://yum.opennms.org/repofiles/opennms-repo-branches-foundation-2016-rhel7.noarch.rpm
-RUN yum -y install jicmp
-RUN yum -y install jicmp6
-RUN yum -y install rrdtool
-RUN yum -y install jrrd
-RUN yum -y install jrrd2
-RUN yum -y install opennms-core
-RUN yum -y install opennms-webapp-jetty
-RUN yum -y install opennms-plugin-protocol-xml
-RUN yum -y install opennms-plugin-provisioning-snmp-asset
-RUN yum -y install opennms-plugin-provisioning-snmp-hardware-inventory
-RUN yum -y install iplike
-RUN yum -y install net-snmp
-RUN yum -y install net-snmp-utils
-RUN yum -y install grafana
-RUN yum -y install grafana-opennms-plugin
-RUN yum -y install perl-XML-Twig
-RUN yum -y install bind-utils
-
-RUN yum -y install which
+RUN yum -y install jicmp jicmp6 rrdtool jrrd jrrd2 opennms-core opennms-webapp-jetty opennms-plugin-protocol-xml opennms-plugin-provisioning-snmp-asset opennms-plugin-provisioning-snmp-hardware-inventory iplike net-snmp net-snmp-utils grafana grafana-opennms-plugin perl-XML-Twig bind-utils which
  
 # Webapp 
 EXPOSE 8980 
